@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+</head>
+<body>
+	 <h1>Todo</h1>
+	 <table>
+	 	<tr>
+	 		<th>id</th>
+	 		<th>tasks</th>
+	 	</tr>
+	 	<tr>
+	 		<%@todos.each do |s| %>
+	 		<td><%=s.id%></td>
+	 		<td><%=s.tasks%></td>
+	 		<%end%>
+	 	</tr>
+	 </table>
+	
+	<br/>
+	<h1>Cat</h1>
+		 <table>
+	 	<tr>
+	 		<th>id</th>
+	 		<th>name</th>
+	 	</tr>
+	 	<tr>
+	 		<%@cats.each do |s| %>
+	 		<td><%=s.id%></td>
+	 		<td><%=s.name%></td>
+	 		<%end%>
+	 	</tr>
+	 </table>
+	<br>
+	<h1>User</h1>
+			 <table>
+	 	<tr>
+	 		<th>id</th>
+	 		<th>name</th>
+	 		<th>email</th>
+	 	</tr>
+	 	<tr>
+	 		<%@users.each do |s| %>
+	 		<td><%=s.id%></td>
+	 		<td><%=s.name%></td>
+	 		<td><%=s.email%></td>
+	 		<%end%>
+	 	</tr>
+	 </table>
+</body>
+</html>

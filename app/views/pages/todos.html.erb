@@ -1,0 +1,9 @@
+<html>
+	<%= form_for Todo.new do |f| %>
+		
+		<%=f.label :task %>
+		<%=f.text_field :task%> 
+		<br>
+		<%=f.submit%>
+	<%end%>
+</html>
